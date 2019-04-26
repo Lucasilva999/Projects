@@ -16,8 +16,8 @@
               {{post.showImage ? 'Hide' : 'Show'}} Image
             </button>
             <span class="badge badge-pill badge-secondary">{{post.data.num_comments}} comments</span>
-            <div v-if="post.showImage">
-              <img :src="post.data.url" alt="">
+            <div v-if="post.showImage" class="imgContainer my-3 bg-white">
+              <img :src="post.data.url" alt="" class="img rounded "/>
             </div>
           </p>
         </div>
@@ -84,4 +84,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vh;
+  height: 60vh;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.img {
+  max-width:100%;
+  max-height:100%;
+}
 </style>
