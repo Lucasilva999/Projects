@@ -6,7 +6,7 @@ const config = () => {
         return {
             bd_string: '',
             jwt_pass: '',
-            jwt_expires_in: ''
+            jwt_expires_in: '7d'
         }
         case 'hml':
         return {
