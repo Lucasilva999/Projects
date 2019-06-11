@@ -1,0 +1,19 @@
+<h1 class="text-center mt-2 mb-5"><i class="fas fa-comments"></i> Mensagens
+<a href="/" class="btn btn-dark">Voltar</a></h1>
+
+<div class="container flex-column mx-auto d-flex align-items-center">
+    {{#each post}}
+    <div class="card-container mb-2">
+    <div class="card border-dark" style="max-width: 50rem; min-width: 50rem;;">
+        <div class="card-header bg-info">
+        <a href="/deletar/{{id}}" class="ml-3 float-right"><i class="fas fa-times"></i></a>   
+        <small class="float-right"><i class="far fa-clock"></i> {{createdAt}}</small>  
+        <h3><i class="far fa-envelope"></i> {{nome}}</h3>
+    </div>
+    <div class="card-body text-dark">
+        {{mensagem}}
+    </div>
+    </div>
+    </div>
+    {{/each}}
+</div>

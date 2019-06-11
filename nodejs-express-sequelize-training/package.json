@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-express-training",
+  "version": "1.0.0",
+  "description": "Treinamento Back-End Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Lucas O. Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
